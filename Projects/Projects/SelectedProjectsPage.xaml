@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projects.ProjectsPage"
+             NavigationPage.HasBackButton="False">
+    <NavigationPage.TitleView>
+        <Label Text="Проекты" FontSize="Large" TextColor="White"  Margin="120,0"></Label>
+    </NavigationPage.TitleView>
+    <ScrollView>
+        <StackLayout>
+            <ListView x:Name="projectsList" BackgroundColor="White" ItemsSource="{Binding projects}" ItemSelected="projectsList_ItemSelected"></ListView>
+        </StackLayout>
+    </ScrollView>
+   
+</ContentPage>

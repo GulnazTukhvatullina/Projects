@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projects.InfoProject"
+             Title="О проекте">
+    <ScrollView>
+        <StackLayout Padding="10" Spacing="10">
+            <Label HorizontalTextAlignment="Center" x:Name="infoFirst"></Label>
+            <Label HorizontalTextAlignment="Center" x:Name="infoSecond"></Label>
+            <Label HorizontalTextAlignment="Center" x:Name="infoThird"></Label>
+            <Label HorizontalTextAlignment="Center" x:Name="infoFourth"></Label>
+            <Label HorizontalTextAlignment="Center" x:Name="infoFifth"></Label>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projects.RegistrsPage">
+    <NavigationPage.TitleView>
+        <StackLayout >
+            <Label Text="Регистрация" FontSize="Large" TextColor="White" Margin="50,0"></Label>
+        </StackLayout>
+        
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="40" Spacing="40">
+                <StackLayout>
+                    <Label Text="Email" TextColor="black"></Label>
+                    <Frame>
+                        <Entry x:Name="emailEntry" />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Логин" TextColor="black"></Label>
+                    <Frame>
+                        <Entry x:Name="loginEntry" />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Пароль" TextColor="black"></Label>
+                    <Frame>
+                        <Entry x:Name="passwordEntry" IsPassword ="True" />
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout>
+                    <Label Text="Пароль" TextColor="black"></Label>
+                    <Frame>
+                        <Entry x:Name="password2Entry" IsPassword ="True" />
+                    </Frame>
+                </StackLayout>
+
+            </StackLayout>
+            <StackLayout Margin="50" HorizontalOptions="Center">
+                <Button Text="Зарегистрироваться" Clicked="Button_Clicked_1"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
